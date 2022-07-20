@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#613636">
+
+    <TextView
+        android:id="@+id/total_pedometer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="累計歩数"
+        app:layout_constraintStart_toStartOf="@+id/pedometer_text"
+        app:layout_constraintTop_toBottomOf="@+id/worldlength_text" />
+
+    <TextView
+        android:id="@+id/date_Results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="2000/01/01 Results"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pedometer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="歩数"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_Results" />
+
+    <TextView
+        android:id="@+id/pedometer_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:text="0歩"
+        app:layout_constraintBottom_toBottomOf="@+id/pedometer_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pedometer_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/percent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="目標達成率"
+        app:layout_constraintStart_toStartOf="@+id/pedometer_text"
+        app:layout_constraintTop_toBottomOf="@+id/pedometer_text" />
+
+    <TextView
+        android:id="@+id/percent_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        app:layout_constraintBottom_toBottomOf="@+id/percent_text"
+        app:layout_constraintEnd_toEndOf="@+id/pedometer_field"
+        app:layout_constraintTop_toTopOf="@+id/percent_text" />
+
+    <TextView
+        android:id="@+id/pedolength_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="歩行距離"
+        app:layout_constraintStart_toStartOf="@+id/pedometer_text"
+        app:layout_constraintTop_toBottomOf="@+id/percent_text" />
+
+    <TextView
+        android:id="@+id/pedolength_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0m"
+        app:layout_constraintBottom_toBottomOf="@+id/pedolength_text"
+        app:layout_constraintEnd_toEndOf="@+id/pedometer_field"
+        app:layout_constraintTop_toTopOf="@+id/pedolength_text" />
+
+    <TextView
+        android:id="@+id/height_bonus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身長ボーナス"
+        app:layout_constraintStart_toStartOf="@+id/pedometer_text"
+        app:layout_constraintTop_toBottomOf="@+id/pedolength_text" />
+
+    <TextView
+        android:id="@+id/height_bonus_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="×1.0"
+        app:layout_constraintBottom_toBottomOf="@+id/height_bonus_text"
+        app:layout_constraintEnd_toEndOf="@+id/pedometer_field"
+        app:layout_constraintTop_toBottomOf="@+id/pedolength_text" />
+
+    <TextView
+        android:id="@+id/worldlength_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="世界歩行距離"
+        app:layout_constraintStart_toStartOf="@+id/pedometer_text"
+        app:layout_constraintTop_toBottomOf="@+id/height_bonus_text" />
+
+    <TextView
+        android:id="@+id/worldlength_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0m"
+        app:layout_constraintBottom_toBottomOf="@+id/worldlength_text"
+        app:layout_constraintEnd_toEndOf="@+id/pedometer_field"
+        app:layout_constraintTop_toTopOf="@+id/worldlength_text" />
+
+    <TextView
+        android:id="@+id/total_pedometer_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0歩"
+        app:layout_constraintBottom_toBottomOf="@+id/total_pedometer_text"
+        app:layout_constraintEnd_toEndOf="@+id/pedometer_field"
+        app:layout_constraintTop_toTopOf="@+id/total_pedometer_text" />
+
+    <TextView
+        android:id="@+id/total_worldlength_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="累計世界歩行距離"
+        app:layout_constraintStart_toStartOf="@+id/pedometer_text"
+        app:layout_constraintTop_toBottomOf="@+id/total_pedometer_text" />
+
+    <TextView
+        android:id="@+id/total_worldlength_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0m"
+        app:layout_constraintBottom_toBottomOf="@+id/total_worldlength_text"
+        app:layout_constraintEnd_toEndOf="@+id/pedometer_field"
+        app:layout_constraintTop_toTopOf="@+id/total_worldlength_text" />
+
+    <TextView
+        android:id="@+id/growup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="GROW UP!!"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_worldlength_text" />
+
+    <TextView
+        android:id="@+id/before_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0m"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/arrow"
+        app:layout_constraintEnd_toStartOf="@+id/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/arrow" />
+
+    <TextView
+        android:id="@+id/after_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0m"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arrow"
+        app:layout_constraintTop_toTopOf="@+id/arrow" />
+
+    <TextView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="→"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/growup_text" />
+
+    <TextView
+        android:id="@+id/please_press_backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="戻るボタンを押してください"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrow" />
+</androidx.constraintlayout.widget.ConstraintLayout>

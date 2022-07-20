@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <RadioGroup
+        android:id="@+id/difficulty"
+        android:layout_width="165dp"
+        android:layout_height="234dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/Button_easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="初級（6000歩/日）" />
+
+        <RadioButton
+            android:id="@+id/Button_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="中級（8000歩/日）" />
+
+        <RadioButton
+            android:id="@+id/Button_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上級（10000歩/日）" />
+
+        <RadioButton
+            android:id="@+id/Button_debug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="テスト用(30歩/日)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="世界を旅する！"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="難易度を選択してください"
+        app:layout_constraintBottom_toTopOf="@+id/difficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
